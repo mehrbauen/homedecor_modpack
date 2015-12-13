@@ -3148,27 +3148,27 @@ for _, color in ipairs(dlamp_colors) do
 end
 
 minetest.register_craft({
-	output = "homedecor:hanging_lantern 2",
+	output = "homedecor:hanging_lantern",
 	recipe = {
 		{ "default:iron_lump", "default:iron_lump", "" },
-		{ "default:iron_lump", "homedecor:lattice_lantern_large", "" },
+		{ "default:iron_lump", "default:torch", "" },
 		{ "default:iron_lump", "", "" },
 	},
 })
 
 minetest.register_craft({
-	output = "homedecor:ceiling_lantern 2",
+	output = "homedecor:ceiling_lantern",
 	recipe = {
-		{ "default:iron_lump", "default:iron_lump", "default:iron_lump" },
-		{ "default:iron_lump", "homedecor:lattice_lantern_large", "default:iron_lump" },
 		{ "", "default:iron_lump", "" },
+		{ "default:iron_lump", "default:torch", "default:iron_lump" },
+		{ "default:iron_lump", "default:iron_lump", "default:iron_lump" },
 	},
 })
 
 minetest.register_craft({
-	output = "homedecor:wall_lamp 2",
+	output = "homedecor:wall_lamp",
 	recipe = {
-		{ "", "homedecor:lattice_lantern_large", "" },
+		{ "", "default:torch", "" },
 		{ "default:iron_lump", "group:stick", "" },
 		{ "default:iron_lump", "group:stick", "" },
 	},
