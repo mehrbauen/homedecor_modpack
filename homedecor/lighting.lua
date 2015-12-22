@@ -322,7 +322,7 @@ homedecor.register("ground_lantern", {
 	inventory_image = "homedecor_ground_lantern_inv.png",
 	wield_image = "homedecor_ground_lantern_inv.png",
 	groups = {snappy=3},
-	light_source = 11,
+	light_source = default.LIGHT_MAX-1,
 	selection_box = gl_cbox,
 	walkable = false
 })
@@ -340,7 +340,7 @@ homedecor.register("hanging_lantern", {
 	inventory_image = "homedecor_hanging_lantern_inv.png",
 	wield_image = "homedecor_hanging_lantern_inv.png",
 	groups = {snappy=3},
-	light_source = 11,
+	light_source = default.LIGHT_MAX-1,
 	selection_box = hl_cbox,
 	walkable = false
 })
@@ -357,8 +357,8 @@ homedecor.register("ceiling_lantern", {
 	use_texture_alpha = true,
 	inventory_image = "homedecor_ceiling_lantern_inv.png",
 	description = "Ceiling Lantern",
-	groups = {snappy=3},	
-	light_source = 11,
+	groups = {snappy=3},
+	light_source = default.LIGHT_MAX-1,
 	selection_box = cl_cbox,
 	walkable = false
 })
